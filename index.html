@@ -4,17 +4,16 @@
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
     <head>
-    	    	<!-- meta charec set -->
+    	<!-- meta charec set -->
         <meta charset="utf-8">
 		<!-- Always force latest IE rendering engine or request Chrome Frame -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<!-- Page Title -->
-        <title>D. Hawkins</title>	
-        <link rel="icon" type="image/png" href="img/favicon.png" />
+        <title>kaigara</title>		
 		<!-- Meta Description -->
-        <meta name="description" content="DevOps - invest in technology wisely">
-        <meta name="keywords" content="ansible, chef, devops, software, kaigara, devstack, docker, puppet, ruby, rails, ruby on rails, ruby-on-rails, vagrant, back-end, backend, deployment, continuous deployment, devops tools">
-        <meta name="author" content="Daniel Hawkins">
+        <meta name="description" content="kaigara - swiss army knife for devops">
+        <meta name="keywords" content="kaigara, vagrant, ansible, shell, devops tool, devops">
+        <meta name="author" content="Helios Technologie SAS">
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -22,18 +21,9 @@
 		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-		<!-- CSS
-		================================================== -->
-		<!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- Twitter Bootstrap css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- jquery.fancybox  -->
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
-		<!-- animate -->
-        <link rel="stylesheet" href="css/animate.css">
 		<!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.scss">
+        
 		<!-- media-queries -->
         <link rel="stylesheet" href="css/media-queries.css">
 
@@ -43,692 +33,85 @@
     </head>
 	
     <body id="body">
+    
+	<div class="home">
+
+	 <img class="logo" src="img/logo.png" alt="">
+
+ 	 <h1 class="page-heading">kaigara</h1>
 	
-		<!-- preloader -->
-		<div id="preloader">
-			<img src="img/preloader.gif" alt="Preloader">
-		</div>
-		<!-- end preloader -->
+	 <h2 class="description">Swiss army knife for devops and developers</h2>
 
-        <!-- 
-        Fixed Navigation
-        ==================================== -->
-        <header id="navigation" class="navbar-fixed-top navbar">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <i class="fa fa-bars fa-2x"></i>
-                    </button>
-					<!-- /responsive nav button -->
-					
-					<!-- logo -->
-                    <a class="navbar-brand" href="#body">
-						<h1 id="logo">DevOps | invest in technology wisely</h1>
-					</a>
-					<!-- /logo -->
-                </div>
+	 <h2 class="description">Kaigara is an extendable shell command line for managing simple devops tasks</h2>
 
-				<!-- main nav -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <ul id="nav" class="nav navbar-nav">
-                        <li class="current"><a href="#body">Home</a></li>
-                        <li><a href="#devops">DevOps</a></li>
-                        <li><a href="#kaigara">Kaigara</a></li>
-                        <li><a href="#devstack">DevStack</a></li>
-                        <li><a href="#helioscloud">Helios Cloud</a></li>
-                        <li><a href="#bootcamp">Bootcamp</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                    </ul>
-                </nav>
-				<!-- /main nav -->
-				
-            </div>
-        </header>
-        <!--
-        End Fixed Navigation
-        ==================================== -->
-		
-		
-		
-        <!--
-        Home Slider
-        ==================================== -->
-		
-		<section id="slider">
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			
-				<!-- Indicators bullet -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				</ol>
-				<!-- End Indicators bullet -->				
-				
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					
-					<!-- single slide -->
-					<div class="item active" style="background-image: url(img/banner.png);">
-						<div class="carousel-caption">
-							<h3 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Hi, I'm Daniel</h3>
-							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">Biz Dev</span> at Helios DevOps Squad</h3>
-							<p data-wow-duration="1000ms" class="wow slideInRight animated">Shipping valuable features to your customer market</p>
-						</div>
-					</div>
-					<!-- end single slide -->
-					
-					<!-- single slide -->
-					<div class="item" style="background-image: url(img/banner.png);">
-						<div class="carousel-caption">
-							<h3 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Tailor made solutions</h3>
-							<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">Upgrade</span> your platform</h3>
-							<p data-wow-duration="500ms" class="wow slideInRight animated">We value lean software development</p>
-						</div>
-					</div>
-					<!-- end single slide -->
-					
-				</div>
-				<!-- End Wrapper for slides -->
-				
-			</div>
-		</section>
-		
-        <!--
-        End Home SliderEnd
-        ==================================== -->
-	
-	<!--
-        Intro
-        ==================================== -->
-        	<section>
-			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
-						<h2>learn, improve, share</h2>
-						<div class="devider"><i class="fa fa-child fa-lg"></i></div>
-					</div>
-					
-					<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-						<p>An entire movement was formed by new technology like cloud infrastructure and virtual machines. This cultural change in perspective combines the two teams into one lean mean rapid deployment machine, leveraging code to manage the infrastructure. It is called DevOps.</p>
-						<p>Transparency, collaboration and cross-functional teams with polyglot skills are breaking down the walls with automation and rapid deployment. Software gets shipped quickly, more often, code failures are detected and corrected faster and the product runs smoother. This sped up process allows innovation to flourish and companies to do more in less time.</p>
-						<p></p>
-						<p></p>
-					</div>
-					
-				</div>
-			</div>
-			
-		</section>
-        
-        <!--
-        End Intro
-        ==================================== -->
-        
-        <!--
-        devops
-        ==================================== -->
-		
-		<section id="devops" class="devops">
-			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
-						<h2>devops squad delivers</h2>
-						<div class="devider"><i class="fa fa-bullseye fa-lg"></i></div>
-					</div>
+  	 <h2 class="part-name">Getting started</h2>
 
-					<!-- service item 1-->
-					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-search fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Audit</h3>
-								<p>We provide an 360 audit of your source code and infrastructure to effectively evaluate and improve the effectiveness of system</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 1-->
-					
-					<!-- service item 2-->
-					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-briefcase fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>General Conception</h3>
-								<p>We design and setup Big Data solution with the integration collaborating with your business analyst</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 2-->
-					
-					<!-- service item 3-->
-					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-gears fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Implementation</h3>
-								<p>Architecture specification and roadmap, including security policies, defining continuous integration and continuous deployment with your team</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 3-->
-					
-					<!-- service item 4-->
-					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-cloud fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Platform upgrade</h3>
-								<p>We upgrade your platform toward the Cloud with more Elastic tools</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 4-->
-					
-					<!-- service item 5-->
-					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-edit fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Documentation</h3>
-								<p>We deliver documented Deployment Pipelines and Provisioning scripts, Infrastructure-as-a-Code</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 5-->
-					
-					<!-- service item 6-->
-					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-cubes fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Virtualization</h3>
-								<p>Relevant to large data center provisioning from hardware to virtualization with OpenStack</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 6-->
-						
-				</div>
-			</div>
-				<div class="sec-sub-title text-center wow fadeInLeft animated" data-wow-duration="500ms">
-				<h2>Toolbox & Skillset</h2>
-				<div class="devider"><i class="fa fa-sliders fa-lg"></i></div>
-				<p>Kaigara, DevStack, Ansible, Puppet, Chef and Bash</p>
-				<p>Docker, Vagrant and kubernetes containers</p>
-				<p>OpenStack, VMWare and Amazon Web Service</p>
-				<p>Ruby and Python</p>
-				<p>Linux, Ubuntu, Centos, Redhat - AIX - Windows - z/OS</p>
-				<p>RabbitMQ, ZeroMQ, WebSphere MQ</p>
-				<p>Hadoop, YARN, Hive, HBase, Spark</p>
-				<p>Scrum, Lean Software Development, Lean Manufacturing</p>
-				<p>Java, JavaScript, RoR, AngularJS, Node.js, CoffeeScript</p>
-				<p>MongoDB, Cassandra, Kafka</p>
-				<p>and we are still learning :)</p>
-				</div>
-			
-		</section>
-		
-        <!--
-        End devops
-        ==================================== -->
-		<!--
-        kaigara
-        ==================================== -->
-		
-		<section id="kaigara">
-			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center mb50 wow fadeInUp animated" data-wow-duration="500ms">
-						<h2>kaigara</h2>
-						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-					</div>
-					
-					<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-						<p>Our beloved creation - the devops swiss army knife. Simple and beneficial</p>
-						<p>Kaigara is an extendable shell command line for managing simple devops tasks</p>
-						<p>You can find it useful if you practise Ansible, Vagrant, etc.</p>
-						<p>Please follow the link to try it <a href="https://github.com/helios-technologies/kaigara">https://github.com/helios-technologies/kaigara</a></p>
-						<p>We would be thankful for your opinion</p>
-					</div>
-					
-				</div>
-			</div>
-			
-		</section>
-		
-        <!--
-        End kaigara
-        ==================================== -->
-        
-        <!--
-        DevStack
-        ==================================== -->
-        <section id="devstack" class="devops">
-			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center mb50 wow fadeInUp animated" data-wow-duration="500ms">
-						<h2>devstack</h2>
-						<div class="devider"><i class="fa fa-wrench fa-lg"></i></div>
-					</div>
+  	 <p>Easily download and install Kaigara using any popular operational system. The setup process will take just couple of minutes.</p>
 
-					<!-- service item 1-->
-					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-line-chart fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Agile</h3>
-								<p>Opinionated script to quickly create a cloud development environment</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 1-->
-					
-					<!-- service item 2-->
-					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-gears fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Useful</h3>
-								<p>Suitable for development and operational testing</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 2-->
-					
-					<!-- service item 3-->
-					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-edit fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Smart</h3>
-								<p>Demonstrates and documents examples of configuring and running services</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 3-->
-				</div>
-			</div>
-			<div class="sec-sub-title text-center wow fadeInLeft animated" data-wow-duration="500ms">
-				<p>DevStack is an awesome tool. It is similar to Ansible - a front end to manage your infrastructure</p>
-				<p>DevStack's mission is to provide and maintain tools used for the installation of the central cloud services from source</p>
-				<p>It has evolved to support a large number of configuration options and alternative platforms and support services</p>
-			</div>
-		</section>
-        
-        <!--
-        End DevStack
-        ==================================== -->
-	
-	<!--
-        HeliosCloud
-        ==================================== -->
-        <section id="helioscloud" class="devops">
-			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center mb50 wow fadeInUp animated" data-wow-duration="500ms">
-						<h2>helios Cloud</h2>
-						<div class="devider"><i class="fa fa-cloud fa-lg"></i></div>
-					</div>
+   	 <h2 class="download">Download</h2>
 
-					<!-- service item 1-->
-					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-download fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Get Maximum</h3>
-								<p>Reliability, scalability, modernization. Get it all at once, we will show you how.</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 1-->
-					
-					<!-- service item 2-->
-					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-briefcase fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Complex</h3>
-								<p>Amamazon Web Services + DevStack all included - easy way to manage your private cloud</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 2-->
-					
-					<!-- service item 3-->
-					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-gears fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Support</h3>
-								<p>Packages up to 24/7 to take care of issues you are facing, prevent their appearence in future</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 3-->
-					
-				</div>
-			</div>
-			<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-				<p>Helios Cloud offers a tailor-made set-up of virtual machine within a virtual network for large companies which need to process scalable and dynamic data, and require the ability to adopt to growth quickly</p>
-			</div>
-	</section>
-        
-        <!--
-        End HeliosCloud
-        ==================================== -->
-        
-        <!--
-        Bootcamp
-        ==================================== -->
-        <section id="bootcamp" class="devops">
-			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center mb50 wow fadeInUp animated" data-wow-duration="500ms">
-						<h2>bootcamp</h2>
-						<div class="devider"><i class="fa fa-graduation-cap fa-lg"></i></div>
-					</div>
+  	 <h2 class="part-name">Configure</h2>
 
-					<!-- service item 1-->
-					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-star fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Quality</h3>
-								<p>Accepting knowledge and experience from professionals, wokring under their supervision then</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 1-->
-					
-					<!-- service item 2-->
-					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-history fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Simplicity</h3>
-								<p>Have on-demand devs when you need, as much as you need, as long as you need</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 2-->
-					
-					<!-- service item 3-->
-					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-check-square fa-2x"></i>
-							</div>
-							
-							<div class="service-desc">
-								<h3>Price</h3>
-								<p>Reduce costs by getting excellent quality for best market price</p>
-							</div>
-						</div>
-					</div>
-					<!-- end service item 3-->
-					
-				</div>
-			</div>
-			<div class="sec-sub-title text-center wow fadeInLeft animated" data-wow-duration="500ms">
-				<p>This is my favourite solution in our list, I am happy when people improve themselves</p>
-				<p>We select maximum 2 persons per month after 9 weeks training to keep great quality</p>
-				<p>Only modern tools, optimal solutions, because our main teacher Louis is a perfectionist in work</p>
-			</div>
-	</section>
-        <!--
-        End Bootcamp
-        ==================================== -->
-		
-        <!--
-        Meet Our Team
-        ==================================== -->		
-		
-		<section id="team" class="team">
-			<div class="container">
-				<div class="row">
-		
-					<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
-						<h2>Meet Our Tech Team</h2>
-						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-					</div>
-					
-					<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-						<p>We are a French DevOps Squad passionate about software design & cloud computing</p>
-						<p>We automate release process and procedures, so there is no sense keeping us full-time</p>
-						<p>We believe in tailor made solutions, each customer deserve a dedicated devops expert, but not an account manager</p>
-						<p>We value lean software development and think great software can be achieved by a small team</p>
-					</div>
+  	 <p></p>
 
-					<!-- single member -->
-					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-						<div class="member-thumb">
-							<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
-							
-						</div>
-						<h4>Louis</h4>
-						<span>Leading Octopus</span>
-					</figure>
-					<!-- end single member -->
-					
-					<!-- single member -->
-					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-						<div class="member-thumb">
-							<img src="img/team/member-2.png" alt="Team Member" class="img-responsive">
-							
-						</div>
-						<h4>Camille</h4>
-						<span>Wise Director</span>
-					</figure>
-					<!-- end single member -->
-					
-					<!-- single member -->
-					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-						<div class="member-thumb">
-							<img src="img/team/member-3.png" alt="Team Member" class="img-responsive">
-							
-						</div>
-						<h4>Nazar</h4>
-						<span>Senior DevOps</span>
-					</figure>
-					<!-- end single member -->
-					
-					<!-- single member -->
-					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-						<div class="member-thumb">
-							<img src="img/team/member-4.png" alt="Team Member" class="img-responsive">
-							
-						</div>
-						<h4>Igor</h4>
-						<span>Senior DevOps</span>
-					</figure>
-					<!-- end single member -->
-					
-					<!-- single member -->
-					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-						<div class="member-thumb">
-							<img src="img/team/member-5.png" alt="Team Member" class="img-responsive">
-							
-						</div>
-						<h4>Dima</h4>
-						<span>Junior DevOps</span>
-					</figure>
-					<!-- end single member -->
-					
-				</div>
-			</div>
-		</section>
-		
-        <!--
-        End Meet Our Team
-        ==================================== -->
-        
-        <!--
-        Blog
-        ==================================== -->
-        <section id="blog" class="devops">
-			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
-						<h2>blog</h2>
-						<div class="devider"><i class="fa fa-comment-o fa-lg"></i></div>
-					</div>
-					<div class="sec-sub-title text-center wow fadeInLeft animated" data-wow-duration="500ms">
-						<h2>DevOps - non-tech perspective</h2>
-					<div class="devider"><i class="fa fa-asterisk fa-lg"></i></div>
-				
-					<div class="article">
-						<p>I have never thought myself working in tech industry. Or creating this website from a template with my own hands during couple of hours, having just primary HTML and CSS skills. But here I am, writing content to attract your attention.</p>
-						<p>It's hard not to see the evolution of technologies in our lives, in every aspect. So I have decided to have a seat closer to the main scene and take a tiny part in this process.</p>
-						<p>I'm addicted to learning and impoving things. And I admire people who can teach others, show ways, solve issues and meanwhile still learn, learn continuously. Maybe, that is why I like DevOps concept. It's not a TOOL, it's PEOPLE - peole, impoving their systems and desiring to improve them all the time. That is so awesome!</p>
-						<p>DevOps is a kind of philosophy. How can you sell philosophy? That's one more reason why I like it - for your own growth you share it with other people. Most companies say they want to change something. And most of them first need to change their mindset - start seeing hidden gems, alternative, more optimal ways, step away from formal thinking - it's not working so good any more.</p>
-						
-					</div>
-					
-				</div>
-			</div>
-			
-		</section>
-        <!--
-        End Blog
-        ==================================== -->
-		
-		<footer id="footer" class="footer">
-			<div class="container">
-				<div class="row">
-				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
-						<div class="footer-single">
-							<p>Feel free to contact me</p>
-							<p>dhawkins@heliostech.fr</p>
-							<p>skype daniel.heliostech</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-						<div class="footer-single">
-							<h6>Find me on</h6>
-							<ul>
-								<li><a href="https://ua.linkedin.com/in/daniel-hawkins-vodolazhskyy-7183aa106">LinkedIn</a></li>
-								<li><a href="https://github.com/DanielHawkins">GitHub</a></li>
-							</ul>
-						</div>
-					</div>
-				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-						<div class="footer-single">
-							<h6>Main websites</h6>
-							<ul>
-								<li><a href="#">Kaigara</a></li>
-								<li><a href="#">DevStack</a></li>
-								<li><a href="#">Helios Cloud</a></li>
-								<li><a href="http://www.heliostech.fr/">Helios Technologies</a></li>
-							</ul>
-						</div>
-					</div>
-					
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<p class="copyright text-center">Developed by Daniel from template of | Copyright © 2015 Themefisher</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-		
-		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+  	 <h2 class="part-name">Usage</h2>
 
-		<!-- Essential jQuery Plugins
-		================================================== -->
-		<!-- Main jQuery -->
-        <script src="js/jquery-1.11.1.min.js"></script>
-		<!-- Single Page Nav -->
-        <script src="js/jquery.singlePageNav.min.js"></script>
-		<!-- Twitter Bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
-		<!-- jquery.fancybox.pack -->
-        <script src="js/jquery.fancybox.pack.js"></script>
-		<!-- jquery.mixitup.min -->
-        <script src="js/jquery.mixitup.min.js"></script>
-		<!-- jquery.parallax -->
-        <script src="js/jquery.parallax-1.1.3.js"></script>
-		<!-- jquery.countTo -->
-        <script src="js/jquery-countTo.js"></script>
-		<!-- jquery.appear -->
-        <script src="js/jquery.appear.js"></script>
-		<!-- Contact form validation -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
-		<!-- Google Map -->
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-		<!-- jquery easing -->
-        <script src="js/jquery.easing.min.js"></script>
-		<!-- jquery easing -->
-        <script src="js/wow.min.js"></script>
-		<script>
-			var wow = new WOW ({
-				boxClass:     'wow',      // animated element css class (default is wow)
-				animateClass: 'animated', // animation css class (default is animated)
-				offset:       120,          // distance to the element when triggering the animation (default is 0)
-				mobile:       false,       // trigger animations on mobile devices (default is true)
-				live:         true        // act on asynchronously loaded content (default is true)
-			  }
-			);
-			wow.init();
-		</script> 
-		<!-- Custom Functions -->
-        <script src="js/custom.js"></script>
-		
-	<script type="text/javascript">
-    </body>
+  	 <p></p> 
+	</div>
+	<div class="posts">
+
+	 <h2 class="part-name">Posts</h2>
+
+  	 <ul class="post-list">
+    {% for post in site.posts %}
+      	  	<li>
+           		<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+           		<h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          	</li>
+    {% endfor %}
+  	 </ul>
+
+ 	 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+	</div>
+
+	<footer id="footer" class="footer">
+
+	 <div class="container">
+
+	  <div class="row">
+
+	   <div class="footer-single">
+	     <p>We are always happy to hear your review or provide guiding for getting maximum result from kaigara</p>
+	   </div>
+
+	   <div class="footer-single">
+	     <h6>Explore</h6>
+	      <ul>
+	       <li><a href="#">GitHub repo</a></li>
+	       <li><a href="#">Heliostech</a></li>
+	      </ul>
+	   </div>
+
+	   <div class="footer-single">
+	     <h6>Support</h6>
+	      <ul>
+	       <li><a href="#">Say 'Hello'</a></li>
+	       <li><a href="#">Download pdf</a></li>
+	      </ul>
+	   </div>
+
+	  </div>
+
+	  <div class="row">
+	   <p class="copyright text-center">Heliostech © 2016</p>
+	  </div>
+
+	 </div>
+
+	</footer>
+
+     </body>
+
 </html>
